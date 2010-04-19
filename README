@@ -1,0 +1,15 @@
+This script makes reinstalling Grub (e.g. after installing Windows and 
+it removed Grub from the MBR) easy.
+
+The script is meant to be run from a Live CD. It will ask you to 
+choose your Linux partition and the hard drive you want to install Grub 
+to. If there is only one partition or drive, it will automatically 
+select it for you (Asking for confirmation before installing Grub, of 
+course). The script also backs up your MBR before installing, so you can 
+restore it if something goes wrong.
+
+This has only been tested with Grub2 and Linux Mint 8 Main edition, but 
+I think it should work with Grub legacy and other distros.
+
+This script requires dialog, and will automatically install it if not 
+found.
